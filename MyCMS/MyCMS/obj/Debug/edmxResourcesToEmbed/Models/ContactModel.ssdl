@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MembershipModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MembershipModelStoreContainer">
+    <EntitySet Name="Contact" EntityType="MembershipModel.Store.Contact" store:Type="Tables" store:Name="Contact">
+      <DefiningQuery>SELECT 
+            [Contact].[ContactId] AS [ContactId], 
+            [Contact].[DisplayOrder] AS [DisplayOrder], 
+            [Contact].[Text] AS [Text]
+            FROM [Contact] AS [Contact]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Ошибки, обнаруженные при создании:
+            предупреждение 6002: В таблице или представлении "Contact" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.
+            -->
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ContactId" />
+      <PropertyRef Name="DisplayOrder" />
+    </Key>
+    <Property Name="ContactId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DisplayOrder" Type="int" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" />
+  </EntityType>
+</Schema>

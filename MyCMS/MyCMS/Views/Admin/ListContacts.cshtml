@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MyCMS.Models.Entities.Contact>
+@{
+    ViewBag.Title = "Список контактов";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>
+    Список контактов</h2>
+<table>
+    <tr>
+        <th>
+            ContactId
+        </th>
+        <th>
+            DisplayOrder
+        </th>
+        <th>
+            Text
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem=>item.ContactId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisplayOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "EditContact", new { contactId = item.ContactId }) |
+                @using (Html.BeginForm("DeleteContact", "Admin", FormMethod.Post))
+                {
+                    @Html.Hidden("contactId",item.ContactId)
+                    <input type="submit" value="Удалить" />
+                }
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Создать", "CreateContact")
+</p>

@@ -1,0 +1,15 @@
+c:\Users\Andrey\Documents\Visual Studio 2010\Projects\MyCMS\MyCMS\bin\MyCMS.dll
+c:\Users\Andrey\Documents\Visual Studio 2010\Projects\MyCMS\MyCMS\bin\MyCMS.pdb
+c:\Users\Andrey\Documents\Visual Studio 2010\Projects\MyCMS\MyCMS\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\Andrey\Documents\Visual Studio 2010\Projects\MyCMS\MyCMS\obj\Debug\MyCMS.dll
+c:\Users\Andrey\Documents\Visual Studio 2010\Projects\MyCMS\MyCMS\obj\Debug\MyCMS.pdb
+C:\Users\Andrey\documents\visual studio 2010\Projects\MyCMS\MyCMS\bin\Ninject.dll
+C:\Users\Andrey\documents\visual studio 2010\Projects\MyCMS\MyCMS\bin\Ninject.pdb
+C:\Users\Andrey\documents\visual studio 2010\Projects\MyCMS\MyCMS\bin\Ninject.xml
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\bin\MyCMS.dll
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\bin\MyCMS.pdb
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\bin\Ninject.pdb
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\bin\Ninject.xml
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\obj\Debug\MyCMS.dll
+C:\Users\Andrey\MyMVC\MyCMS\MyCMS\obj\Debug\MyCMS.pdb

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MyCMS.Models.Entities.Contact>
+
+@if (Model == null)
+{
+    <p>Нет записей</p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>
+                ContactId
+            </th>
+            <th>
+                DisplayOrder
+            </th>
+            <th>
+                Text
+            </th>
+        
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisplayOrder)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
